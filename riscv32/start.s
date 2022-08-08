@@ -123,7 +123,7 @@ _reset_start:
 
   /* semihost exit syscall */
   li a0, 0x18
-  la a1, 0x20026
+  li a1, 0x20026
   .option norvc
   .option norelax
   .global semihost_call
