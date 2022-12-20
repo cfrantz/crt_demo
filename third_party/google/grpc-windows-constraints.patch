@@ -9,7 +9,7 @@ index e25db3b0fe..ce9fef0e07 100644
 -    values = {"cpu": "x64_windows"},
 +    #values = {"cpu": "x64_windows"},
 +    constraint_values = [
-+        "@platforms//cpu:x86_64",
++        #"@platforms//cpu:x86_64",
 +        "@platforms//os:windows",
 +    ]
  )
@@ -26,7 +26,7 @@ index 43e8ac7b68..79ec095e72 100644
 -    values = {"cpu": "x64_windows"},
 +    #values = {"cpu": "x64_windows"},
 +    constraint_values = [
-+        "@platforms//cpu:x86_64",
++        #"@platforms//cpu:x86_64",
 +        "@platforms//os:windows",
 +    ],
  )
