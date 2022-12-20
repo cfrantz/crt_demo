@@ -39,6 +39,20 @@ platform_runner(
     platform = "@crt//platforms/x86_64:win64",
 )
 
+
+platform_target(
+    name = "win32",
+    platform = "@crt//platforms/x86_32:win32",
+    target = ":sieve",
+)
+
+platform_runner(
+    name = "win32_demo",
+    binary = ":sieve",
+    exec_config = "@crt//platforms/x86_32:qemu_windows",
+    platform = "@crt//platforms/x86_32:win32",
+)
+
 platform_test(
     name = "windows_passing_test",
     binary = ":trivial_passing_test",
