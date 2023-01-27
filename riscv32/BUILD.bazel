@@ -8,17 +8,11 @@ cc_binary(
     name = "sieve",
     srcs = [
         "notmain.c",
-        "start.s",
-    ],
-    copts = [
-        "-nostdlib",
-        "-ffreestanding",
+        "start.S",
     ],
     linkopts = [
         "-T $(location memmap.ld)",
-        "-nostartfiles",
         "-nostdlib",
-        #        "-lgcc",
     ],
     target_compatible_with = [
         "@platforms//cpu:riscv32",
